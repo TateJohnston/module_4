@@ -4,8 +4,44 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculator</title>
+    <link rel="stylesheet" , href="calculator.css" />
+    <script src="calculatorUtil.js"></script>
   </head>
   <body>
-    <h1>Simple Calculator</h1>
+    <main id="calculator">
+      <div id="screen">
+        <h3 id="result"></h3>
+      </div>
+      <div class="rows" id="rowTwo">
+        <button onclick="seven()" class="numbers">7</button>
+        <button onclick="eight()" class="numbers">8</button>
+        <button onclick="nine()" class="numbers">9</button>
+        <button onclick="divide()" class="symbols">&divide;</button>
+      </div>
+      <div class="rows" id="rowThree">
+        <button onclick="four()" class="numbers">4</button>
+        <button onclick="five()" class="numbers">5</button>
+        <button onclick="six()" class="numbers">6</button>
+        <button onclick="multiply()" class="symbols">&times;</button>
+      </div>
+      <div class="rows" id="rowFour">
+        <button onclick="one()" class="numbers">1</button>
+        <button onclick="two()" class="numbers">2</button>
+        <button onclick="three()" class="numbers">3</button>
+        <button onclick="subtract()" class="symbols">&minus;</button>
+      </div>
+      <div class="rows" id="rowFive">
+        <button onclick="zero()" class="numbers">0</button>
+        <button
+          style="background-color: paleturquoise"
+          onclick="clearAll()"
+          class="interface"
+        >
+          C
+        </button>
+        <button onclick="equals()" class="symbols">=</button>
+        <button onclick="addition()" class="symbols">+</button>
+      </div>
+    </main>
   </body>
 </html>
